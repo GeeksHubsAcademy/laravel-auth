@@ -9,6 +9,10 @@ use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
+    public function getAll()
+    {
+       return User::all();
+    }
     public function register(Request $request)
     {
         try {
